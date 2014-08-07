@@ -1,0 +1,89 @@
+@mixin background-gradient($color-bottom, $color-top) {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, $color-bottom), color-stop(100%, $color-top));
+  background-image: -moz-linear-gradient(bottom, $color-bottom, $color-top);
+  background-image: -webkit-linear-gradient(bottom, $color-bottom, $color-top);
+  background-image: -o-linear-gradient(bottom, $color-bottom, $color-top);
+  background-image: linear-gradient(bottom, $color-bottom, $color-top);
+  background-image: -ms-linear-gradient(bottom, $color-bottom, $color-top);
+  background-image: linear-gradient(bottom, $color-bottom, $color-top);
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin align-items($val) {
+  -webkit-box-align: $val;
+  -webkit-flex-align: $val;
+  -webkit-align-items: $val;
+  -ms-flex-align: $val;
+  -moz-flex-align: $val;
+  align-items: $val;
+}
+
+@mixin flex-wrap($val) {
+  -webkit-flex-wrap: $val;
+  -moz-flex-wrap: $val;
+  -ms-flex-wrap: $val;
+  flex-wrap: $val;
+}
+
+@mixin flex-direction($val) {
+  -webkit-flex-direction: $val;
+  -moz-flex-direction: $val;
+  -ms-flex-direction: $val;
+  flex-direction: $val;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin justify-content($val) {
+  -webkit-justify-content: $val;
+  -moz-justify-content: $val;
+  -ms-justify-content: $val;
+  justify-content: $val;
+}
+
+@mixin align-content($val) {
+  -webkit-align-content: $val;
+  -moz-align-content: $val;
+  -ms-align-content: $val;
+  align-content: $val;
+}
+
+@mixin flex-flow($direction, $wrap) {
+  -webkit-flex-flow: $direction $wrap;
+  -moz-flex-flow: $direction $wrap;
+  -ms-flex-flow: $direction $wrap;
+  flex-flow: $direction $wrap;
+}
+
+@mixin box-orient($orient) {
+  -webkit-box-orient: $orient;
+  -moz-box-orient: $orient;
+  -ms-box-orient: $orient;
+}
+
+@mixin box-pack($pack) {
+  -webkit-box-pack: $pack;
+  -ms-flex-pack: $pack;
+}

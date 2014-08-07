@@ -1,0 +1,381 @@
+@import "compass/compass";
+@import "mixins";
+
+html body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#main-navigation {
+  margin-bottom: 0;
+  @include box-shadow(0 -8px 5px -5px rgba(#000, 0.3) inset);
+  .navbar-brand {
+    height: 110px;
+  }
+  .navbar-nav {
+    margin-top: 30px;
+    li {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.btn.submit {
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  @include box-shadow(0 0 0 10px rgba(#000, 0.2));
+}
+
+#top-carousel {
+  background: url("../img/red-abstract-background.jpg") no-repeat center center red;
+  background-size: 100% auto;
+  height: 500px;
+  .carousel-control {
+    width: 60px;
+  }
+  .item {
+    .item-inner {
+      height: 500px;
+      @include flexbox();
+      @include align-items(center);
+      .item-image {
+        padding-left: 20px;
+        @include flex(1 0 30%);
+        img {
+          max-width: 100%;
+        }
+      }
+      .item-text {
+        @include flex(1 0 70%);
+        color: #FFF;
+        h1 {
+          font-size: 40px;
+          font-weight: 800;
+          text-transform: uppercase;
+          text-shadow: 0 -3px 0 rgba(#000, 0.3);
+        }
+        p {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+
+.header-block {
+  background: #333;
+  @include box-shadow(0 0 0 20px rgba(#000, 0.3));
+  position: relative;
+  z-index: 1;
+  .header-block-inner {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 70%;
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-shadow: -3px -3px 0 rgba(#000, 0.3);
+      color: #FFF;
+    }
+    p {
+      font-size: 16px;
+      margin: 20px 0;
+      color: #DBDBDB;
+    }
+  }
+}
+
+.info-blocks {
+  padding: 50px 0;
+  .info-blocks-inner {
+    @include flexbox();
+    @include align-items(stretch);
+    .info-block {
+      @include flex(1);
+      @include flexbox();
+      .info-block-inner {
+        @include flex(1);
+        padding: 0 20px;
+        text-align: center;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 30px;
+          font-weight: 600;
+          text-transform: uppercase;
+          height: 50px;
+        }
+        .img {
+          height: 180px;
+          width: 180px;
+          margin: auto;
+          background: no-repeat center center #FFF;
+          background-size: auto 100%;
+          @include border-radius(100%);
+          @include box-shadow(
+                  20px 20px 0 rgba(#6CC979, 0.5),
+                  -20px 20px 0 rgba(#D13E3E, 0.5),
+                  -20px -20px 0 rgba(#435AC9, 0.5),
+                  20px -20px 0 rgba(#D1C12E, 0.5)
+          );
+          @include transition(box-shadow 0.3s ease-in-out);
+        }
+        p {
+          margin-top: 30px;
+          font-size: 16px;
+        }
+        &:hover {
+          .img {
+            @include box-shadow(
+                    30px 30px 0 rgba(#D1C12E, 0.5),
+                    -30px 30px 0 rgba(#435AC9, 0.5),
+                    -30px -30px 0 rgba(#D13E3E, 0.5),
+                    30px -30px 0 rgba(#6CC979, 0.5)
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+.malls {
+  padding: 50px 0;
+  background: url('../img/mall-bg.jpg') no-repeat center center #E0E0E0;
+  background-size: 100% auto;
+  .malls-inner {
+    @include flexbox();
+    @include justify-content(center);
+    .mall {
+      @include flex(0 0 auto);
+      margin: 20px;
+      padding: 20px;
+      background: no-repeat center 10% rgba(#D13E3E, 0.9);
+      background-size: 70% auto;
+      @include box-shadow(0 0 0 10px rgba(#FFF, 0.1), 0 0 0 1px rgba(#FFF, 0.2) inset);
+      width: 200px;
+      height: 200px;
+      color: #FFF;
+      position: relative;
+      .info {
+        position: absolute;
+        bottom: 10%;
+        width: 80%;
+        left: 10%;
+      }
+      &.black {
+        background-color: rgba(#000, 0.9);
+        .info {
+          color: #D13E3E;
+        }
+      }
+      &:hover {
+        @include box-shadow(0 0 0 10px rgba(#FFF, 0.2), 0 0 0 1px rgba(#FFF, 0.2) inset);
+      }
+    }
+  }
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  @include box-shadow(0 0 0 20px rgba(#000, 0.7));
+}
+
+#to-owners {
+  padding: 50px 0;
+  background: url("../img/green-abstract-background.jpg") no-repeat center center #C4EAB9;
+  background-size: 100% auto;
+  .owners-block {
+    @include flexbox();
+    .image {
+      @include flex(1 0 30%);
+      text-align: center;
+      img {
+        display: inline-block;
+        max-width: 80%;
+      }
+    }
+    .info {
+      @include flex(1 0 70%);
+      padding-left: 100px;
+      h1 {
+        font-weight: 800;
+        color: #FFF;
+        text-transform: uppercase;
+        text-shadow: -3px -3px 0 rgba(#000, 0.1);
+      }
+      p {
+        color: rgba(#FFF, 0.8);
+      }
+      .phone {
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #FFF;
+        text-shadow: -2px -2px 0 rgba(#000, 0.1);
+        a, a:hover {
+          color: #8BBFE8;
+        }
+      }
+    }
+  }
+}
+
+#feedback {
+  padding: 50px 0;
+  background: url("../img/blue-gradient.jpg") no-repeat center center #2C97DD;
+  background-size: 100% auto;
+  @include box-shadow(0 -20px 0 rgba(#000, 0.4));
+  .feedback-inner {
+    @include flexbox();
+    .submit-form {
+      @include flex(1 0 70%);
+      padding-right: 100px;
+      h1 {
+        font-weight: 800;
+        color: #FFF;
+        text-transform: uppercase;
+        text-shadow: -3px -3px 0 rgba(#000, 0.1);
+      }
+      p {
+        color: rgba(#FFF, 0.8);
+      }
+      form {
+        margin-top: 20px;
+        input, textarea {
+          @include border-radius(0);
+          border: none;
+          @include box-shadow(0 0 0 5px rgba(#000, 0.1));
+          margin: 5px;
+        }
+        textarea {
+          resize: none;
+        }
+      }
+    }
+    .image {
+      @include flex(1 0 30%);
+      text-align: center;
+      img {
+        display: inline-block;
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+#footer {
+  padding: 20px 0 50px;
+  background: #000;
+  .footer-inner {
+    .menu-top {
+      padding: 0 0 10px;
+      margin: 0;
+      border-bottom: 1px solid #242424;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          font-size: 16px;
+          font-weight: 600;
+          color: #FFF;
+          padding: 10px 15px;
+        }
+      }
+    }
+    .menu-bottom {
+      margin: 20px 0;
+      @include flexbox();
+      .links {
+        @include flex(1 0 60%);
+        @include flexbox();
+        @include align-items(stretch);
+        @include justify-content(flex-start);
+        ul {
+          padding: 0 15px;
+          margin: 0;
+          li {
+            display: block;
+            a {
+              color: #BFBFBF;
+            }
+            &.head {
+              font-weight: 600;
+              color: #C12727;
+              text-transform: uppercase;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        ul + ul {
+          margin-left: 15px;
+          padding-left: 30px;
+          border-left: 1px solid #242424;
+        }
+      }
+      .info {
+        @include flex(1 0 40%);
+        color: #FFF;
+        .sharing {
+          margin: 0 0 10px;
+          padding: 0 0 10px;
+          border-bottom: 1px solid #242424;
+          li {
+            display: inline-block;
+            a {
+              display: block;
+              text-align: center;
+              height: 30px;
+              width: 30px;
+              line-height: 30px;
+              color: #000;
+              background: #FFF;
+              font-weight: 900;
+              @include border-radius(100%);
+              text-decoration: none;
+              &:hover {
+                background: #E5E5E5;
+              }
+              &.fb, &.tw, &.vk {
+                text-shadow: -2px -2px 0 rgba(#000, 0.2);
+                color: #FFF;
+              }
+              &.fb {
+                background: #405C97;
+                &:hover {
+                  background: #5A76B2;
+                }
+              }
+              &.tw {
+                background: #55ACEE;
+                &:hover {
+                  background: #8BBCE0;
+                }
+              }
+              &.vk {
+                background: #57799D;
+                &:hover {
+                  background: #7490AF;
+                }
+              }
+            }
+            & + li {
+              margin-left: 5px;
+            }
+          }
+        }
+        .site {
+          margin-bottom: 10px;
+        }
+        .copy {
+          margin-top: 20px;
+          color: #CECECE;
+        }
+      }
+    }
+  }
+}
