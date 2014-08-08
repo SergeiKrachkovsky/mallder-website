@@ -63,10 +63,9 @@
         }
       }
       .menu-bottom {
-        @include flex-direction(column);
-        @include align-items(center);
+        display: block;
         .links {
-          @include flex(1);
+          @include flex(none);
           @include flex-direction(column);
           @include align-items(center);
           ul, ul + ul {
@@ -85,6 +84,9 @@
               }
             }
           }
+        }
+        .info {
+          @include flex(none);
         }
       }
     }
