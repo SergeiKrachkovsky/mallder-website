@@ -8,7 +8,7 @@
         OSM_URL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
         OSM_ATTRIB = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
-        var malls = $('.malls .mall');
+        var malls = $('#malls .mall');
         var points = [];
         var bbox = {
             min_lat: 180,
