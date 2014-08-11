@@ -21,10 +21,9 @@
           .item {
             .time-val {
               max-width: 100%;
-              @include flex-direction(column);
-              @include align-items(stretch);
+              display: block;
               .name, .days, .time {
-                @include flex(1);
+                @include flex(none);
               }
               .name, .time {
                 text-align: left;
@@ -38,8 +37,7 @@
   }
   .mall-counters {
     .mall-counters-inner {
-      @include flex-direction(column);
-      @include align-items(center);
+      display: block;
       .counter + .counter {
         margin-top: 50px;
       }
