@@ -66,12 +66,12 @@
     }
     counters(true);
     $(window).bind('scroll.mc', function () {
-        if (this.scrollY + this.innerHeight + 100 > $('.mall-counters').offset().top) {
+        if (this.pageYOffset + this.innerHeight + 100 > $('.mall-counters').offset().top) {
             $(this).unbind('scroll.mc');
             counters();
         }
     });
-    if (window.scrollY + window.innerHeight > $('.mall-counters').offset().top) {
+    if (window.pageYOffset + window.innerHeight > $('.mall-counters').offset().top) {
         $(window).scroll();
     }
 })(jQuery);
