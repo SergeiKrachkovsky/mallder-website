@@ -262,7 +262,9 @@
           width: 100%;
           @include flexbox();
           @include justify-content(center);
+          @include box-pack(center);
           span {
+            display: block;
             margin: 0 3px;
             width: 50px;
             text-align: center;
