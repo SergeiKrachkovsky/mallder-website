@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Mallder</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav id="main-navigation" class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="mallder"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Торговые центры</a></li>
+                <li><a href="#">Владельцам магазинов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="mall-info mall-info-nemiga_3">
+    <div class="mall-info-accent-bg">
+        <div class="container">
+            <div class="mall-info-inner">
+                <div class="info">
+                    <h1>
+                        <a class="mall" href="#" data-lat="53.904030" data-lng="27.552410">
+                            <img src="img/nemiga_3.logo.png" alt=""/>
+                        </a>
+                        Немига 3
+                    </h1>
+                    <div class="items">
+                        <a class="item" data-d="address" href="#map"><div class="item-inner"><i class="glyphicon glyphicon-map-marker"></i> <span>Минск, ул. Немига, 3</span></div></a>
+                        <div class="item active" data-d="time" title="Время работы"><div class="item-inner"><i class="glyphicon glyphicon-time"></i> <span>с 11:00 до 23:00</span></div></div>
+                        <a class="item" data-d="website" href="http://nemiga-3.by/" target="_blank"><div class="item-inner"><i class="glyphicon glyphicon-globe"></i> <span>Перейти на сайт</span></div></a>
+                        <a class="item" data-d="phone" href="tel:+375291302180" target="_blank"><div class="item-inner"><i class="glyphicon glyphicon-earphone"></i> <span>+375 (29) 130-21-80</span></div></a>
+                    </div>
+                    <div class="item-details">
+                        <div class="item active" data-d="time">
+                            <div class="time-val">
+                                <div class="name">Гипермаркет</div>
+                                <div class="days"><div class="active">Пн</div><div class="active now">Вт</div><div class="active">Ср</div><div class="active">Чт</div><div class="active">Пт</div><div class="active">Сб</div><div class="active">Вс</div></div>
+                                <div class="time">с 11:00 до 23:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mall-counters">
+    <div class="container">
+        <div class="mall-counters-inner">
+            <div class="counter">
+                <div class="value" data-val="7">
+                    <div class="old"></div><div class="new"></div>
+                </div>
+                <div class="text">Актуальные акции торгового центра</div>
+            </div>
+            <div class="counter">
+                <div class="value" data-val="412">
+                    <div class="old"></div><div class="new"></div>
+                </div>
+                <div class="text">Поиск товаров, брендов и услуг в торговом центре</div>
+            </div>
+            <div class="counter">
+                <div class="value" data-val="4">
+                    <div class="old"></div><div class="new"></div>
+                </div>
+                <div class="text">Карты этажей торгового центра</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-block">
+    <div class="container">
+        <div class="header-block-inner">
+            <h1>Вся информация о ТЦ Немига 3</h1>
+            <p>В нашем мобильном приложении.</p>
+        </div>
+    </div>
+</div>
+<div class="mall-info-downloads">
+    <div class="container">
+        <div class="downloads-inner">
+            <div class="item ios">
+                <h2>Apple iOS <img src="icons/phone.svg" alt=""/></h2>
+                <div class="phone">
+                    <div class="screen"></div>
+                </div>
+                <div class="submit-block">
+                    <a href="#" class="btn btn-default btn-lg submit">
+                        <img src="icons/apple.svg" alt=""/>
+                        App Store
+                    </a>
+                </div>
+            </div>
+            <div class="item android">
+                <h2>Google Android <img src="icons/phone-tablet.svg" alt=""/></h2>
+                <div class="phone">
+                    <div class="screen"></div>
+                </div>
+                <div class="submit-block">
+                    <a href="#" class="btn btn-success btn-lg submit">
+                        <img src="icons/android.svg" alt=""/>
+                        Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map"></div>
+<div id="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <ul class="menu-top">
+                <li><a href="#">Торговые центры</a></li>
+                <li><a href="#">Владельцам магазинов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="menu-bottom">
+                <div class="links">
+                    <ul>
+                        <li class="head">Торговые центры</li>
+                        <li><a href="#">Минск  Арена</a></li>
+                        <li><a href="#">Экспобел</a></li>
+                        <li><a href="#">Европа</a></li>
+                        <li><a href="#">Галилео</a></li>
+                        <li><a href="#">Град</a></li>
+                        <li><a href="#">Модный молл</a></li>
+                        <li><a href="#">Немига</a></li>
+                        <li><a href="#">Новая Европа</a></li>
+                        <li><a href="#">Скала</a></li>
+                        <li><a href="#">Столица</a></li>
+                        <li><a href="#">Замок</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head">Навигация</li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                        <li><a href="#">Раздел сайта</a></li>
+                    </ul>
+                    <ul>
+                        <li class="subscribe">
+                            <p>Подпишись на рассылку новостей сервиса.</p>
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email"/>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info btn-block">Подписаться <i class="glyphicon glyphicon-envelope"></i></button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul></ul>
+                </div>
+                <div class="info">
+                    <ul class="sharing">
+                        <li><a href="#" class="fb">Fb</a></li>
+                        <li><a href="#" class="tw">Tw</a></li>
+                        <li><a href="#" class="vk">Vk</a></li>
+                    </ul>
+                    <div class="site"><a href="#">mallder.by</a></div>
+                    <div class="address"><i class="glyphicon glyphicon-map-marker"></i> Республика Беларусь, Минск, ул. Мельникайте 2</div>
+                    <div class="phone"><i class="glyphicon glyphicon-earphone"></i> <a href="tel:+375296170107">+375 (29) 617-01-07</a></div>
+                    <div class="copy">&copy; 2014 Mallder</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

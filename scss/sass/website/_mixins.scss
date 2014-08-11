@@ -1,11 +1,10 @@
-@mixin background-gradient($color-bottom, $color-top) {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, $color-bottom), color-stop(100%, $color-top));
-  background-image: -moz-linear-gradient(bottom, $color-bottom, $color-top);
-  background-image: -webkit-linear-gradient(bottom, $color-bottom, $color-top);
-  background-image: -o-linear-gradient(bottom, $color-bottom, $color-top);
-  background-image: linear-gradient(bottom, $color-bottom, $color-top);
-  background-image: -ms-linear-gradient(bottom, $color-bottom, $color-top);
-  background-image: linear-gradient(bottom, $color-bottom, $color-top);
+@mixin background-gradient($color-bottom, $color-top, $from: 0%, $to: 100%) {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop($from, $color-bottom), color-stop($to, $color-top));
+  background-image: -moz-linear-gradient(bottom, $color-bottom $from, $color-top $to);
+  background-image: -webkit-linear-gradient(bottom, $color-bottom $from, $color-top $to);
+  background-image: -o-linear-gradient(bottom, $color-bottom $from, $color-top $to);
+  background-image: -ms-linear-gradient(bottom, $color-bottom $from, $color-top $to);
+  background-image: linear-gradient(bottom, $color-bottom $from, $color-top $to);
 }
 
 @mixin flexbox() {

@@ -32,6 +32,9 @@
       @include align-items(center);
     }
   }
+  #map {
+    height: 320px;
+  }
   #to-owners {
     background-size: auto 100%;
     .owners-block {

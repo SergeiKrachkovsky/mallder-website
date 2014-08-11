@@ -1,0 +1,48 @@
+@media (max-width: 991px) {
+  .mall-info {
+    background-size: auto 100%;
+    .mall-info-inner {
+      .mall {
+        display: none;
+      }
+      .info {
+        .items {
+          .item {
+            @include flex(1);
+            .item-inner {
+              height: 70px;
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+        .item-details {
+          .item {
+            .time-val {
+              max-width: 100%;
+              @include flex-direction(column);
+              @include align-items(stretch);
+              .name, .days, .time {
+                @include flex(1);
+              }
+              .name, .time {
+                text-align: left;
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mall-counters {
+    .mall-counters-inner {
+      @include flex-direction(column);
+      @include align-items(center);
+      .counter + .counter {
+        margin-top: 50px;
+      }
+    }
+  }
+}

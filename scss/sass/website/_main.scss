@@ -107,7 +107,7 @@ html body {
       display: block;
       margin: 20px;
       padding: 20px;
-      background: no-repeat center 10% rgba(#D13E3E, 0.9);
+      background: no-repeat center 10% rgba($accent-color-red, 0.9);
       background-size: 70% auto;
       @include box-shadow(0 0 0 10px rgba(#FFF, 0.3), 0 0 0 1px rgba(#FFF, 0.2) inset);
       width: 200px;
@@ -122,50 +122,50 @@ html body {
         font-weight: 600;
         text-shadow: -2px -2px 0 rgba(#000, 0.2);
       }
-      &.black {
-        background-color: rgba(#000, 0.9);
+      &.mall-nemiga {
+        background-color: rgba($accent-color-black, 0.9);
         .info {
-          color: #D13E3E;
+          color: $accent-color-red;
         }
       }
-      &.yellow {
-        background: rgba(#FDD706, 0.9);
+      &.mall-ekspobel {
+        background: rgba($accent-color-yellow, 0.9);
         .info {
-          color: #333;
+          color: $accent-color-middleBlack;
         }
       }
-      &.green-red {
-        background: rgba(#51AC11, 0.9);
+      &.mall-stolica {
+        background: rgba($accent-color-green, 0.9);
         .info {
-          color: #FFF;
+          color: $accent-color-white;
         }
       }
-      &.red-black {
+      &.mall-skala {
         .info {
-          color: #000;
+          color: $accent-color-black;
           text-shadow: -2px -2px 0 rgba(#FFF, 0.2);
         }
       }
-      &.darkBlue {
-        background: rgba(#3B28A4, 0.9);
+      &.mall-nobaya_evropa {
+        background: rgba($accent-color-darkBlue, 0.9);
       }
-      &.dark {
-        background: rgba(#231F20, 0.9);
+      &.mall-evropa {
+        background: rgba($accent-color-dark, 0.9);
       }
-      &.white-red {
-        background: rgba(#FFF, 0.9);
+      &.mall-minsk_arena {
+        background: rgba($accent-color-white, 0.9);
         .info {
-          color: #F21A0B;
+          color: $accent-color-red;
         }
       }
-      &.orange {
-        background: rgba(#EA7C0D, 0.9);
+      &.mall-galileo {
+        background: rgba($accent-color-orange, 0.9);
       }
-      &.pink {
-        background: rgba(#FE2243, 0.9);
+      &.mall-grad {
+        background: rgba($accent-color-pink, 0.9);
       }
-      &.linhtPink {
-        background: rgba(#CD6F6D, 0.9);
+      &.mall-modniy_moll {
+        background: rgba($accent-color-lightPink, 0.9);
       }
       &:hover {
         @include box-shadow(0 0 0 10px rgba(#FFF, 0.5), 0 0 0 1px rgba(#FFF, 0.2) inset);
