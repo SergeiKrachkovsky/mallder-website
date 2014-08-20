@@ -27,11 +27,19 @@ html body {
   }
 }
 
-.btn.submit {
-  margin: 10px;
-  text-transform: uppercase;
-  font-weight: 800;
-  @include box-shadow(0 0 0 10px rgba(#000, 0.2));
+.btn, .btn-group {
+  &.submit {
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    @include box-shadow(0 0 0 10px rgba(#000, 0.2));
+  }
+}
+.btn-group.submit {
+  @include border-radius(6px);
+  .btn {
+    font-weight: 800;
+  }
 }
 
 #top-carousel {
@@ -95,9 +103,25 @@ html body {
 }
 
 #malls {
-  padding: 50px 0;
-  background: url('../img/mall-bg.jpg') no-repeat center center #E0E0E0;
-  background-size: 100% auto;
+  position: relative;
+  .malls-switch {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    .btn.active {
+//      color: $accent-color-red;
+    }
+  }
+  .tab-pane {
+    padding: 150px 0 50px;
+    background: no-repeat center center #E0E0E0;
+    background-size: 100% auto;
+    &#city-minsk {
+      background-image: url('../img/mall-minsk-bg.jpg');
+    }
+  }
   .malls-inner {
     @include flexbox();
     @include justify-content(center);
@@ -121,21 +145,49 @@ html body {
         left: 10%;
         font-weight: 600;
         text-shadow: -2px -2px 0 rgba(#000, 0.2);
+        .label {
+          margin: 10px 0;
+          font-size: 20px;
+          display: inline-block;
+        }
       }
-      &.mall-nemiga {
+      &.mall-status-soon {
+        background-color: rgba(#989898, 0.9) !important;
+        .info {
+          color: #E8E8E8 !important;
+        }
+      }
+      &.mall-status-disabled {
+        background-color: rgba(#F2F2F2, 0.9) !important;
+        .info {
+          .label {
+            font-size: 16px !important;
+          }
+          text-shadow: none !important;
+          color: #989898 !important;
+        }
+      }
+      &:hover {
+        @include box-shadow(0 0 0 10px rgba(#FFF, 0.5), 0 0 0 1px rgba(#FFF, 0.2) inset);
+      }
+    }
+  }
+  #city-minsk {
+    .mall {
+      &.mall-nemiga_3 {
         background-color: rgba($accent-color-black, 0.9);
         .info {
           color: $accent-color-red;
         }
       }
       &.mall-ekspobel {
-        background: rgba($accent-color-yellow, 0.9);
+        background-color: rgba($accent-color-yellow, 0.9);
         .info {
           color: $accent-color-middleBlack;
         }
       }
       &.mall-stolica {
-        background: rgba($accent-color-green, 0.9);
+        background-color: rgba($accent-color-green, 0.9);
         .info {
           color: $accent-color-white;
         }
@@ -146,29 +198,23 @@ html body {
           text-shadow: -2px -2px 0 rgba(#FFF, 0.2);
         }
       }
-      &.mall-nobaya_evropa {
-        background: rgba($accent-color-darkBlue, 0.9);
+      &.mall-novaya_evropa, &.mall-evropa {
+        background-color: rgba($accent-color-darkBlue, 0.9);
       }
-      &.mall-evropa {
-        background: rgba($accent-color-dark, 0.9);
-      }
-      &.mall-minsk_arena {
-        background: rgba($accent-color-white, 0.9);
+      &.mall-arena {
+        background-color: rgba($accent-color-white, 0.9);
         .info {
           color: $accent-color-red;
         }
       }
       &.mall-galileo {
-        background: rgba($accent-color-orange, 0.9);
+        background-color: rgba($accent-color-orange, 0.9);
       }
       &.mall-grad {
-        background: rgba($accent-color-pink, 0.9);
+        background-color: rgba($accent-color-pink, 0.9);
       }
       &.mall-modniy_moll {
-        background: rgba($accent-color-lightPink, 0.9);
-      }
-      &:hover {
-        @include box-shadow(0 0 0 10px rgba(#FFF, 0.5), 0 0 0 1px rgba(#FFF, 0.2) inset);
+        background-color: rgba($accent-color-lightPink, 0.9);
       }
     }
   }

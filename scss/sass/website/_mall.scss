@@ -223,7 +223,7 @@
           #FFF, // time text color
           rgba(#000, 0.1) // time shadow color
   );
-  &.mall-info-nemiga_3 {
+  &.mall-info-minsk-nemiga_3 {
     @include mall(
             $accent-color-black, // accent color
             tint($accent-color-black, 80%), // text color
@@ -235,6 +235,132 @@
             shade($accent-color-black, 10%), // item border color
             rgba(shade($accent-color-black, 10%), 0.9), // item active background
             shade($accent-color-black, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-grad {
+    @include mall(
+            $accent-color-pink, // accent color
+            $accent-color-white, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-white, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-white, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-pink, 10%), // item border color
+            rgba(shade($accent-color-pink, 10%), 0.9), // item active background
+            shade($accent-color-pink, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-grad {
+    @include mall(
+            $accent-color-pink, // accent color
+            $accent-color-white, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-white, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-white, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-pink, 10%), // item border color
+            rgba(shade($accent-color-pink, 10%), 0.9), // item active background
+            shade($accent-color-pink, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-ekspobel {
+    @include mall(
+            $accent-color-yellow, // accent color
+            $accent-color-black, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-black, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-black, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-yellow, 10%), // item border color
+            rgba(shade($accent-color-yellow, 10%), 0.9), // item active background
+            shade($accent-color-yellow, 20%), // item active border color
+            #FFF, // time inactive background color
+            #B2B2B2, // time inactive text color
+            #BADC46, // time active background color
+            #FFF, // time active text color
+            #86A227, // time now color
+            rgba($accent-color-black, 0.9), // time title color
+            $accent-color-black
+    );
+  }
+  &.mall-info-minsk-evropa, &.mall-info-minsk-novaya_evropa {
+    @include mall(
+            $accent-color-darkBlue, // accent color
+            $accent-color-white, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-white, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-white, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-darkBlue, 10%), // item border color
+            rgba(shade($accent-color-darkBlue, 10%), 0.9), // item active background
+            shade($accent-color-darkBlue, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-arena {
+    @include mall(
+            $accent-color-white, // accent color
+            $accent-color-red, // text color
+            rgba($accent-color-red, 0.2), // border-color
+            $accent-color-red, // icon color
+            rgba($accent-color-black, 0.1), // text shadow color
+            $accent-color-red, // title color
+            rgba($accent-color-white, 0.1), // item background color
+            shade($accent-color-white, 10%), // item border color
+            rgba(shade($accent-color-white, 10%), 0.9), // item active background
+            shade($accent-color-white, 20%), // item active border color
+            #FFF, // time inactive background color
+            #B2B2B2, // time inactive text color
+            #BADC46, // time active background color
+            #FFF, // time active text color
+            #86A227, // time now color
+            rgba($accent-color-red, 0.9), // time title color
+            $accent-color-red
+    );
+  }
+  &.mall-info-minsk-galileo {
+    @include mall(
+            $accent-color-orange, // accent color
+            $accent-color-white, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-white, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-white, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-orange, 10%), // item border color
+            rgba(shade($accent-color-orange, 10%), 0.9), // item active background
+            shade($accent-color-orange, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-skala {
+    @include mall(
+            $accent-color-red, // accent color
+            $accent-color-black, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-black, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-black, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-red, 10%), // item border color
+            rgba(shade($accent-color-red, 10%), 0.9), // item active background
+            shade($accent-color-red, 20%) // item active border color
+    );
+  }
+  &.mall-info-minsk-stolica {
+    @include mall(
+            $accent-color-green, // accent color
+            $accent-color-white, // text color
+            rgba(#FFF, 0.2), // border-color
+            $accent-color-white, // icon color
+            rgba(#000, 0.2), // text shadow color
+            $accent-color-white, // title color
+            rgba(#FFF, 0.1), // item background color
+            shade($accent-color-green, 10%), // item border color
+            rgba(shade($accent-color-green, 10%), 0.9), // item active background
+            shade($accent-color-green, 20%) // item active border color
     );
   }
 }
@@ -329,6 +455,16 @@
         bottom: 200px;
         left: 0;
         width: 100%;
+        background: rgba(#FFF, 0.7);
+        padding: 10px 0;
+        img {
+          display: block;
+          height: 70px;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+        }
       }
       .submit {
         position: relative;

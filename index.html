@@ -28,9 +28,9 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Торговые центры</a></li>
-                <li><a href="#">Владельцам магазинов</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#malls">Торговые центры</a></li>
+                <li><a href="#to-owners">Владельцам магазинов</a></li>
+                <li><a href="#feedback">Контакты</a></li>
             </ul>
         </div>
     </div>
@@ -48,7 +48,6 @@
                     <div class="item-text">
                         <h1>Только актуальные акции</h1>
                         <p class="text">Death there mirth way the noisy merit. Piqued shy spring nor six though mutual living ask extent. Replying of dashwood advanced ladyship smallest disposal or. Attempt offices own improve now see. Called person are around county talked her esteem. Those fully these way nay thing seems.</p>
-                        <p class="link"><a href="#" class="btn btn-default btn-lg submit">Подробно</a></p>
                     </div>
                     <div class="item-image">
                         <img src="img/percent.png" alt="">
@@ -60,7 +59,6 @@
                     <div class="item-text">
                         <h1>Поиск товаров, брендов и услуг</h1>
                         <p class="text">Much evil soon high in hope do view. Out may few northward believing attempted. Yet timed being songs marry one defer men our. Although finished blessing do of. Consider speaking me prospect whatever if. Ten nearer rather hunted six parish indeed number. Allowance repulsive sex may contained can set suspected abilities cordially.</p>
-                        <p class="link"><a href="#" class="btn btn-default btn-lg submit">Подробно</a></p>
                     </div>
                     <div class="item-image">
                         <img src="img/search-boutique.png" alt="">
@@ -72,7 +70,6 @@
                     <div class="item-text">
                         <h1>Удобные карты торговых центров</h1>
                         <p class="text">Offices parties lasting outward nothing age few resolve. Impression to discretion understood to we interested he excellence. Him remarkably use projection collecting. Going about eat forty world has round miles.</p>
-                        <p class="link"><a href="#" class="btn btn-default btn-lg submit">Подробно</a></p>
                     </div>
                     <div class="item-image">
                         <img src="img/map.png" alt="">
@@ -96,84 +93,89 @@
         </div>
     </div>
 </div>
-<div id="malls">
-    <div class="container">
-        <div class="malls-inner">
-            <a class="mall mall-nemiga" href="#" style="background-image: url('img/nemiga_3.logo.png')" data-lat="53.904030" data-lng="27.552410">
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">ул. Немига, 3</div>
-                </div>
+<div id="malls" class="tab-content">
+    <div class="malls-switch">
+        <div class="btn-group submit" data-toggle="buttons" role="tablist">
+            <a href="#city-minsk" class="btn btn-danger btn-lg active" data-toggle="tab">
+                <input type="radio" name="options" id="option1" checked> Минск
             </a>
-            <a class="mall mall-zamok" href="#" style="background-image: url('img/zamok.logo.png')" data-lat="53.926310" data-lng="27.517610">
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">пр. Победителей, 65</div>
-                </div>
+            <a href="#city-vilnius" class="btn btn-danger btn-lg disabled" data-toggle="tab">
+                <input type="radio" name="options" id="option2"> Vilnius <span class="label label-success">Скоро!</span>
             </a>
-            <a class="mall mall-ekspobel" href="#" style="background-image: url('')" data-lat="53.964" data-lng="27.6242">
-                [экспобел]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">пересечение ул. Мирошниченко и МКАД</div>
-                </div>
-            </a>
-            <a class="mall mall-minsk_arena" href="#" style="background-image: url('')" data-lat="53.9347" data-lng="27.4817">
-                [минск арена]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">пр-т Победителей, 111А</div>
-                </div>
-            </a>
-            <a class="mall mall-evropa" href="#" style="background-image: url('')" data-lat="53.9294" data-lng="27.5808">
-                [европа]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">Сурганова, 57А</div>
-                </div>
-            </a>
-            <a class="mall mall-galileo" href="#" style="background-image: url('')" data-lat="53.8901" data-lng="27.5548">
-                [галлилео]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">ул. Бобруйская, 6</div>
-                </div>
-            </a>
-            <a class="mall mall-grad" href="#" style="background-image: url('')" data-lat="53.9329" data-lng="27.4568">
-                [град]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">ул. Тимирязева, 123/2</div>
-                </div>
-            </a>
-            <a class="mall mall-modniy_moll" href="#" style="background-image: url('')" data-lat="53.9244" data-lng="27.5175">
-                [модный молл]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">пр. Победителей, 65 (ТЦ Замок)</div>
-                </div>
-            </a>
-            <a class="mall mall-nobaya_evropa" href="#" style="background-image: url('')" data-lat="53.9286" data-lng="27.5829">
-                [новая европа]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">ул. Сурганова, 57Б</div>
-                </div>
-            </a>
-            <a class="mall mall-skala" href="#" style="background-image: url('')" data-lat="53.9091" data-lng="27.4711">
-                [скала]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">ул. П. Глебки, 5</div>
-                </div>
-            </a>
-            <a class="mall mall-stolica" href="#" style="background-image: url('')" data-lat="53.8956" data-lng="27.548">
-                [столица]
-                <div class="info">
-                    <div class="city">Минск</div>
-                    <div class="address">пр-т Независимости, 3/2</div>
-                </div>
-            </a>
+        </div>
+    </div>
+    <div class="tab-pane active" id="city-minsk">
+        <div class="container">
+            <div class="malls-inner">
+                <a class="mall mall-nemiga_3" href="#" style="background-image: url('img/nemiga_3.logo.png')" data-lat="53.904030" data-lng="27.552410">
+                    <div class="info">
+                        <div class="address">ул. Немига, 3</div>
+                    </div>
+                </a>
+                <a class="mall mall-zamok" href="#" style="background-image: url('img/zamok.logo.png')" data-lat="53.926310" data-lng="27.517610">
+                    <div class="info">
+                        <div class="address">пр. Победителей, 65</div>
+                    </div>
+                </a>
+                <a class="mall mall-grad" href="#" style="background-image: url('')" data-lat="53.9329" data-lng="27.4568">
+                    [град]
+                    <div class="info">
+                        <div class="address">ул. Тимирязева, 123/2</div>
+                    </div>
+                </a>
+                <a class="mall mall-evropa" href="#" style="background-image: url('')" data-lat="53.9286" data-lng="27.5829">
+                    [европа]
+                    <div class="info">
+                        <div class="address">ул. Сурганова, 57Б</div>
+                    </div>
+                </a>
+                <a class="mall mall-novaya_evropa" href="#" style="background-image: url('')" data-lat="53.9286" data-lng="27.5829">
+                    [новая европа]
+                    <div class="info">
+                        <div class="address">ул. Сурганова, 57Б</div>
+                    </div>
+                </a>
+                <a class="mall mall-ekspobel mall-status-soon" href="#" style="background-image: url('img/expobel.logo.png')" data-lat="53.964" data-lng="27.6242">
+                    <div class="info">
+                        <div class="label label-danger">Скоро!</div>
+                        <div class="address">пересечение ул. Мирошниченко и МКАД</div>
+                    </div>
+                </a>
+                <a class="mall mall-arena mall-status-soon" href="#" style="background-image: url('img/minsk_arena.logo.png')" data-lat="53.9347" data-lng="27.4817">
+                    <div class="info">
+                        <div class="label label-danger">Скоро!</div>
+                        <div class="address">пр-т Победителей, 111А</div>
+                    </div>
+                </a>
+                <a class="mall mall-galileo mall-status-soon" href="#" style="background-image: url('')" data-lat="53.8901" data-lng="27.5548">
+                    [галлилео]
+                    <div class="info">
+                        <div class="label label-danger">Скоро!</div>
+                        <div class="address">ул. Бобруйская, 6</div>
+                    </div>
+                </a>
+                <a class="mall mall-korona_na_kalvariyskoy mall-status-soon" href="#" style="background-image: url('')" data-lat="53.8901" data-lng="27.5548">
+                    [корона на кальварийской]
+                    <div class="info">
+                        <div class="label label-danger">Скоро!</div>
+                        <div class="address">ул. Бобруйская, 6</div>
+                    </div>
+                </a>
+                <a class="mall mall-skala mall-status-disabled" href="#" style="background-image: url('')" data-lat="53.9091" data-lng="27.4711">
+                    [скала]
+                    <div class="info">
+                        <div class="label label-warning">Не подключен</div>
+                        <div class="address">ул. П. Глебки, 5</div>
+                    </div>
+                </a>
+                <a class="mall mall-stolica mall-status-disabled" href="#" style="background-image: url('')" data-lat="53.8956" data-lng="27.548">
+                    [столица]
+                    <div class="info">
+                        <div class="label label-warning">Не подключен</div>
+                        <div class="address">пр-т Независимости, 3/2</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -229,9 +231,9 @@
     <div class="container">
         <div class="footer-inner">
             <ul class="menu-top">
-                <li><a href="#">Торговые центры</a></li>
-                <li><a href="#">Владельцам магазинов</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#malls">Торговые центры</a></li>
+                <li><a href="#to-owners">Владельцам магазинов</a></li>
+                <li><a href="#feedback">Контакты</a></li>
             </ul>
             <div class="menu-bottom">
                 <div class="links">
@@ -248,16 +250,6 @@
                         <li><a href="#">Скала</a></li>
                         <li><a href="#">Столица</a></li>
                         <li><a href="#">Замок</a></li>
-                    </ul>
-                    <ul>
-                        <li class="head">Навигация</li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
-                        <li><a href="#">Раздел сайта</a></li>
                     </ul>
                     <ul>
                         <li class="subscribe">
