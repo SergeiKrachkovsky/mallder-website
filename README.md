@@ -2,19 +2,34 @@
 
 При верстке использовался http://getbootstrap.com/ v3
 
-## index.html
+## Главня страница / index.html
 
 ### Блок `id="malls"`
 
-Используется стандатрный компонент http://getbootstrap.com/javascript/#tabs
+Используется стандартный компонент http://getbootstrap.com/javascript/#tabs
+
+Разделен по городам.
 
 ```
-<a class="mall mall-{slug}" href="#" style="background-image: url('img/{slug}.logo.png')" data-lat="{lat}" data-lng="{lng}">
+<div class="tab-pane active" id="city-{city slug}">
+  ...
+</div>
+```
+
+Табы хранятся в `class="malls-switch"`.
+
+Блок ТЦ
+
+```
+<a class="mall mall-{mall slug}" href="#" style="background-image: url('img/{mall slug}.logo.png')" data-lat="{lat}" data-lng="{lng}">
   <div class="info">
     <div class="address">{address}</div>
   </div>
 </a>
 ```
+
+Если у бутика стоит статус скоро - `class="mall mall-{mall slug} mall-status-soon"`.
+Если у бутика стоит статус неактивен - `class="mall mall-{mall slug} mall-status-disabled"`.
 
 Если нет лого - url('') и вставляется название тц.
 
@@ -27,3 +42,12 @@
 </a>
 ```
 
+## Страница магазина / mall_zamok.html, mall_nemiga_3.html
+
+### Блок `class="mall-info ..."`
+
+```
+<div class="mall-info mall-info-{city slug}-{mall slug}">
+  ...
+</div>
+```
