@@ -42,7 +42,7 @@
 </a>
 ```
 
-## Страница магазина / mall_zamok.html, mall_nemiga_3.html
+## Страница магазина / mall-zamok.html, mall-nemiga_3.html
 
 ### Блок `class="mall-info ..."`
 
@@ -51,3 +51,5 @@
   ...
 </div>
 ```
+
+Остальное по аналогии.
